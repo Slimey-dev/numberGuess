@@ -19,7 +19,6 @@ fn main() {
         .expect("Please type a number!");
     let upper_bound: u32 = upper_bound.trim().parse().expect("Please type a number!");
     let secret_number = rand::thread_rng().gen_range(lower_bound..=upper_bound);
-    println!("The secret number is: {}", secret_number);
 
     loop {
         println!("Please input your guess.");
